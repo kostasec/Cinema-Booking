@@ -9,7 +9,8 @@
 **A web application for cinema ticket reservations.**
 
 **Features**
-**User Interface**: Responsive design for seamless booking experience.
-**Admin Dashboard**: Manage movie listings, showtimes, and bookings.
-**Seat Selection**: Interactive seat map for real-time availability.
-**Authentication**: User login and registration for personalized services.
+
+-**User Interface**: Responsive design for seamless booking experience.
+-**Admin Dashboard**: Manage movie listings, showtimes, and bookings.
+-**Seat Selection**: Interactive seat map for real-time availability.
+-**Authentication**: User login and registration for personalized services.
