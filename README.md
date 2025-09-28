@@ -4,7 +4,7 @@
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-WebFramework-brightgreen?logo=spring)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Frontend-blue?logo=typescript)
 ![SCSS](https://img.shields.io/badge/SCSS-Design-pink?logo=sass)
-![MySQL](https://img.shields.io/badge/MySQL-Database-lightblue?logo=mysql)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-lightblue?logo=postgresql)
 
 **A web application for cinema ticket reservations.**
 
