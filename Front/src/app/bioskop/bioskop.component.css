@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    flex-grow:  1;
+    margin-top: 8px;
+  }
+  
+  .no-results {
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+    font-size: 14px;
+    font-style: italic;
+  }
+  
+  .mat-column-id {
+    flex: 0 0 5%;
+  }
+  
+  .mat-column-naziv {
+    flex: 0 0 40%;
+  }
+  
+  .mat-column-adresa {
+    flex: 0 0 40%;
+  }
+  
+  .mat-column-actions {
+    flex: 0 0 20%;
+  }
+  
+  .title-center {
+    margin: 0 auto;
+  }

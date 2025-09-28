@@ -1,0 +1,44 @@
+<div class="container">
+    <h3 mat-dialog-title *ngIf="flag == 1">Dodavanje sale</h3>
+    <h3 mat-dialog-title *ngIf="flag == 2">Modifikacija sale: {{data.id}}</h3>
+    <h3 mat-dialog-title *ngIf="flag == 3">Brisanje sale: {{data.id}}</h3>
+    <form class="mat-dialog-content" #formControl="ngForm">
+
+  
+      <div class="form">
+        <mat-form-field>
+          <input matInput placeholder="Kapacitet" [(ngModel)]="data.kapacitet" name="kapacitet" [disabled]="flag == 3">
+        </mat-form-field>
+      </div>
+
+      <div class="form">
+        <mat-form-field>
+          <input matInput placeholder="brojRedova" [(ngModel)]="data.brojRedova" name="brojRedova" [disabled]="flag == 3">
+        </mat-form-field>
+      </div>
+  
+      <div class="form">
+        <mat-form-field>
+          <mat-select [(ngModel)]="data.bioskop" placeholder="Bioskop" name="bioskop" [compareWith]="compareTo" [disabled]="flag == 3">
+            <mat-option *ngFor="let bioskop of bioskopi" [value]="bioskop">
+              {{ bioskop.naziv }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+  
+      <div mat-dialog-actions>
+        <button mat-button *ngIf="flag == 1" type="submit" [mat-dialog-close]="1" (click)="add()" [disabled]="!formControl.valid">
+          Sačuvaj
+        </button>
+        <button mat-button *ngIf="flag == 2" type="submit" [mat-dialog-close]="1" (click)="update()" [disabled]="!formControl.valid">
+          Sačuvaj
+        </button>
+        <button mat-button *ngIf="flag == 3" type="submit" [mat-dialog-close]="1" (click)="delete()">
+          Obriši
+        </button>
+        <button mat-button (click)="cancel()">Poništi</button>
+      </div>
+  
+    </form>
+  </div>

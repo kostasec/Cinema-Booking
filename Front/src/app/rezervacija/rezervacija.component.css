@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    flex-grow:  1;
+    margin-top: 8px;
+  }
+  
+  .no-results {
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+    font-size: 14px;
+    font-style: italic;
+  }
+  
+  .mat-column-id {
+    flex: 0 0 5%;
+  }
+  
+  .mat-column-brojOsoba {
+    flex: 0 0 15%;
+  }
+  
+  .mat-column-cenaKarte {
+    flex: 0 0 15%;
+  }
+  
+  .mat-column-datum {
+    flex: 0 0 15%;
+  }
+  
+  .mat-column-placeno {
+    flex: 0 0 15%;
+  }
+  
+  .mat-column-film {
+    flex: 0 0 10%;
+  }
+  
+  .mat-column-sala {
+    flex: 0 0 10%;
+  }
+  
+  .mat-column-actions {
+    flex: 0 0 15%;
+  }
+  
+  .title-center {
+    margin: 0 auto;
+  }
